@@ -25,7 +25,7 @@ module Yajl
 
     # The mime-type we expect the response to be. If it's anything else, we can't parse it
     # and an InvalidContentType is raised.
-    ALLOWED_MIME_TYPES = ["application/json", "text/plain"]
+    ALLOWED_MIME_TYPES = ["application/json", "text/javascript", "text/plain"]
 
     # Makes a basic HTTP GET request to the URI provided
     def self.get(uri, opts = {}, &block)
